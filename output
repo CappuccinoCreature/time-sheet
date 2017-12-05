@@ -44,8 +44,8 @@
 	$name, '<br>
 	Our Lady of the Elms<br>
 	<table><tr><th>Date</th><th>Hours</th></tr>
-	<tr><td>', $date_0, '</td><td>', $hours_0, '</td></tr>
-	<tr><td>', $date_1, '</td><td>', $hours_1, '</td></tr>
-	<tr><td>', $date_2, '</td><td>', $hours_2, '</td></tr>
-	<tr><td>', $date_3, '</td><td>', $hours_3, '</td></tr></table>';
+	<tr><td>', $day_0, '</td><td>', $hours_0, '</td></tr>
+	<tr><td>', $day_1, '</td><td>', $hours_1, '</td></tr>
+	<tr><td>', $day_2, '</td><td>', $hours_2, '</td></tr>
+	<tr><td>', $day_3, '</td><td>', $hours_3, '</td></tr></table>';
 ?>
