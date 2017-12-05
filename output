@@ -1,41 +1,41 @@
 <?php
 	$name = $_POST['name'];
-	if isset ($_POST['date_0']){
+	if (isset ($_POST['date_0'])){
 		$date_0 = $_POST['date_0'];
 	} else {
 		$date_0 = '';
 	}
-	if isset ($_POST['date_1']){
+	if (isset ($_POST['date_1'])){
 		$date_0 = $_POST['date_1'];
 	} else {
 		$date_1 = '';
 	}
-	if isset ($_POST['date_2']){
+	if (isset ($_POST['date_2'])){
 		$date_2 = $_POST['date_2'];
 	} else {
 		$date_2 = '';
 	}
-	if isset ($_POST['date_3']){
+	if (isset ($_POST['date_3'])){
 		$date_0 = $_POST['date_3'];
 	} else {
 		$date_3 = '';
 	}
-	if isset ($_POST['hours_0']){
+	if (isset ($_POST['hours_0'])){
 		$hours_0 = $_POST['hours_0'];
 	} else {
 		$hours_0 = '';
 	}
-	if isset ($_POST['hours_1']){
+	if (isset ($_POST['hours_1'])){
 		$hours_1 = $_POST['hours_1'];
 	} else {
 		$hours_1 = '';
 	}
-	if isset ($_POST['hours_2']){
+	if (isset ($_POST['hours_2'])){
 		$hours_2 = $_POST['hours_2'];
 	} else {
 		$hours_2 = '';
 	}
-	if isset ($_POST['hours_3']){
+	if (isset ($_POST['hours_3'])){
 		$hours_3 = $_POST['hours_3'];
 	} else {
 		$hours_3 = '';
