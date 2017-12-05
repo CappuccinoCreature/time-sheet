@@ -4,7 +4,7 @@
 <h3>Auxiliary Services Time Sheet</h3>
 </head>
 <body>
-<form method = 'post' action = 'localhost/output.php>
+<form method = 'post' action = 'http://localhost/output.php'>
 Name:<br>
 <input type = 'text' name = 'name'>
 <table>
