@@ -1,24 +1,24 @@
 <?php
 	$name = $_POST['name'];
-	if (isset ($_POST['date_0'])){
-		$date_0 = $_POST['date_0'];
+	if (isset ($_POST['day_0'])){
+		$day_0 = $_POST['day_0'];
 	} else {
-		$date_0 = '';
+		$day_0 = '';
 	}
-	if (isset ($_POST['date_1'])){
-		$date_0 = $_POST['date_1'];
+	if (isset ($_POST['day_1'])){
+		$day_0 = $_POST['day_1'];
 	} else {
-		$date_1 = '';
+		$day_1 = '';
 	}
-	if (isset ($_POST['date_2'])){
-		$date_2 = $_POST['date_2'];
+	if (isset ($_POST['day_2'])){
+		$day_2 = $_POST['day_2'];
 	} else {
-		$date_2 = '';
+		$day_2 = '';
 	}
-	if (isset ($_POST['date_3'])){
-		$date_0 = $_POST['date_3'];
+	if (isset ($_POST['day_3'])){
+		$day_0 = $_POST['day_3'];
 	} else {
-		$date_3 = '';
+		$day_3 = '';
 	}
 	if (isset ($_POST['hours_0'])){
 		$hours_0 = $_POST['hours_0'];
