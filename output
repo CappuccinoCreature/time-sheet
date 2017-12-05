@@ -6,7 +6,7 @@
 		$day_0 = '';
 	}
 	if (isset ($_POST['day_1'])){
-		$day_0 = $_POST['day_1'];
+		$day_1 = $_POST['day_1'];
 	} else {
 		$day_1 = '';
 	}
@@ -16,7 +16,7 @@
 		$day_2 = '';
 	}
 	if (isset ($_POST['day_3'])){
-		$day_0 = $_POST['day_3'];
+		$day_3 = $_POST['day_3'];
 	} else {
 		$day_3 = '';
 	}
