@@ -5,9 +5,10 @@
 </head>
 <body>
 <form method = 'post'>
+Name:<br>
 <input type = 'text' name = 'name'>
 <table>
-<tr><th>Date</th><th>Time</th></tr>
+<tr><th>Date</th><th>Hours</th></tr>
 <tr><td><input type = 'date' name = 'day_0'></td>
 <td><input type = 'number' name = 'hours_0' min = 0 max = 20 step = 1></td></tr>
 <tr><td><input type = 'date' name = 'day_1'></td>
