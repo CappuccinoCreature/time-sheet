@@ -5,15 +5,16 @@
 <script language = 'JavaScript'>
   count = 0
   limit = 10
-  function addInput() => {
+  function addInput(tableId) => {
     if (count < limit) {
-			var table = document.getElementById('timeTable')
-			var row = table.insertRow(0)
+			var table = document.getElementById(tableId)
+			var row = table.insertRow()
 			var cell1 = row.insertCell(0)
-			var cell2 = row.insertCell(1)
 			cell1.innerHTML = '<input type = 'date' name = 'time[][date]'>
+			var cell2 = row.insertCell(1)
 			cell2.innerHTML = '<input type = 'number' name = 'time[][hours]' min = 0 max = 20 step = 0.05>
 		}
+		count++
   }
 </script>
 </head>
@@ -24,7 +25,7 @@ Name:<br>
 <table id = 'timeTable'>
 <tr><th>Date</th><th>Hours</th></tr>
 </table><br>
-<input type = 'button' name = 'addValue' onClick = 'addInput' value = 'Add an entry'><br>
+<input type = 'button' name = 'addValue' onClick = 'addInput(timeTable)' value = 'Add an entry'><br>
 <input type = 'submit' name = 'submit' value = 'Submit'>
 </form>
 </body>
