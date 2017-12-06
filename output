@@ -1,12 +1,12 @@
 <?php
 	$name = $_POST['name'];
 
-	echo '<h3>Time Sheet</h3><br>',
+	echo '<h3>Time Sheet</h3>',
 	$name, '<br>
 	Our Lady of the Elms<br>
 	<table border = 1><tr><th>Date</th><th>Hours</th></tr>';
-	if (isset ($_POST['time'])) {
-		foreach ($_POST['time'] as $day) {
+	if (isset ($_POST['time[][]'])) {
+		foreach ($_POST['time[]'] as $day) {
 			echo '<tr><td>', $day[date], '</td><td>', $day[hours], '</td></tr>';
 		}
 	}
