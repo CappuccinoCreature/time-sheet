@@ -5,7 +5,7 @@
 <script language = 'JavaScript'>
   count = 0
   limit = 10
-  function addInput() => {
+  function addInput() {
     if (count < limit) {
 			var table = document.getElementById('timeTable')
 			var row = table.insertRow(-1)
