@@ -7,7 +7,7 @@
 	<table border = 1><tr><th>Date</th><th>Hours</th></tr>';
 	if (isset ($_POST['time'])) {
 		foreach ($_POST['time'] as $day) {
-			echo '<tr><td>', $day[date], '</td><td>' $day[hours], '</td></tr>';
+			echo '<tr><td>', $day[date], '</td><td>', $day[hours], '</td></tr>';
 		}
 	}
 	echo '</table>';
