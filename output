@@ -1,14 +1,16 @@
 <?php
 	$name = $_POST['name'];
+	$date = $_POST['date'];
+	$hours = $_POST['hours'];
 
 	echo '<h3>Time Sheet</h3>',
 	$name, '<br>
 	Our Lady of the Elms<br>
-	<table border = 1><tr><th>Date</th><th>Hours</th></tr>';
-	if (isset ($_POST['date_0'])) {
-		$date = $_POST['date_0'];
-		$hours = $_POST['hours_0'];
-		echo '<tr><td>', $date, '</td><td>', $hours, '</td></tr>';
+	<table border = 1><tr><th>Date</th><th>Hours</th></tr>
+	<tr><td>', $date, '</td><td>', $hours, '</td></tr>';
+	if (isset ($_POST['date[]'])) {
+		foreach ($date as $day and $hours as $hour) {
+		echo '<tr><td>', $day, '</td><td>', $hour, '</td></tr>';
 		}
 	echo '</table>';
 ?>
