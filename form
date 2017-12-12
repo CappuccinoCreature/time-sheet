@@ -11,8 +11,8 @@
 			var row = table.insertRow(-1)
 			var cell1 = row.insertCell(0)
 			var cell2 = row.insertCell(1)
-			cell1.innerHTML = '<input type = 'date' name = "'date_' + count">'
-			cell2.innerHTML = '<input type = 'number' name = "'hours_' + count" min = 0 max = 20 step = 0.5>'
+			cell1.innerHTML = '<input type = 'date' name = 'dates[]'>'
+			cell2.innerHTML = '<input type = 'number' name = 'hours[]' min = 0 max = 20 step = 0.5>'
 		count++
 	} else
 		alert = 'You cannot add more than 10 days'
@@ -25,8 +25,8 @@ Name:<br>
 <input type = 'text' name = 'name'>
 <table id = 'timeTable'>
 <tr><th>Date</th><th>Hours</th></tr>
-<tr><td><input type = 'date' name = 'date_0'></td>
-<td><input type = 'number' name = 'hours_0' min = .5 max = 30 step = .5></td></tr>
+<tr><td><input type = 'date' name = 'date'></td>
+<td><input type = 'number' name = 'hours' min = .5 max = 30 step = .5></td></tr>
 </table><br>
 <input type = 'button' name = 'addValue' onClick = 'addInput()' value = 'Add an entry'><br>
 <input type = 'submit' name = 'submit' value = 'Submit'>
