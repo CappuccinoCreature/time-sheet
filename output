@@ -5,7 +5,7 @@
 	$name, '<br>
 	Our Lady of the Elms<br>
 	<table border = 1><tr><th>Date</th><th>Hours</th></tr>';
-	if (isset ($_POST['date 0'])) {
+	if (isset ($_POST['date_0'])) {
 		$date = $_POST['date_0'];
 		$hours = $_POST['hours_0'];
 		echo '<tr><td>', $date, '</td><td>', $hours, '</td></tr>';
