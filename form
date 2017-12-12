@@ -3,16 +3,16 @@
 <meta charset = 'UTF-8'>
 <h3>Auxiliary Services Time Sheet</h3>
 <script language = 'JavaScript'>
-  count = 0
+  count = 1
   limit = 10
   function addInput() {
     if (count < limit) {
 			var table = document.getElementById('timeTable')
 			var row = table.insertRow(-1)
 			var cell1 = row.insertCell(0)
-			cell1.innerHTML = '<input type = 'date' name = "'date' + count">
 			var cell2 = row.insertCell(1)
-			cell2.innerHTML = '<input type = 'number' name = "'hours' + count" min = 0 max = 20 step = 0.5>
+			cell1.innerHTML = '<input type = 'date' name = "'date' + count">'
+			cell2.innerHTML = '<input type = 'number' name = "'hours' + count" min = 0 max = 20 step = 0.5>'
 		count++
 	} else
 		alert = 'You cannot add more than 10 days'
@@ -25,6 +25,8 @@ Name:<br>
 <input type = 'text' name = 'name'>
 <table id = 'timeTable'>
 <tr><th>Date</th><th>Hours</th></tr>
+<tr><td><input type = 'date' name = 'date 0'></td>
+<td><input type = 'number' name = 'hours 0' min = .5 max = 30 step = .5></td></tr>
 </table><br>
 <input type = 'button' name = 'addValue' onClick = 'addInput()' value = 'Add an entry'><br>
 <input type = 'submit' name = 'submit' value = 'Submit'>
