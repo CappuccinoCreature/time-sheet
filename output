@@ -10,6 +10,5 @@
 		$hours = $_POST['hours 0'];
 		echo '<tr><td>', $date, '</td><td>', $hours, '</td></tr>';
 		}
-	}
 	echo '</table>';
 ?>
