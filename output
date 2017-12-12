@@ -5,9 +5,10 @@
 	$name, '<br>
 	Our Lady of the Elms<br>
 	<table border = 1><tr><th>Date</th><th>Hours</th></tr>';
-	if (isset ($_POST['time[][]'])) {
-		foreach ($_POST['time[]'] as $day) {
-			echo '<tr><td>', $day[date], '</td><td>', $day[hours], '</td></tr>';
+	if (isset ($_POST['date 0'])) {
+		$date = $_POST['date 0'];
+		$hours = $_POST['hours 0'];
+		echo '<tr><td>', $date, '</td><td>', $hours, '</td></tr>';
 		}
 	}
 	echo '</table>';
