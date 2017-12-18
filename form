@@ -2,7 +2,7 @@
 <head>
 <meta charset = 'UTF-8'>
 <h3>Auxiliary Services Time Sheet</h3>
-<script language = 'JavaScript'>
+<script type = 'text/javaScript'>
   count = 1
   limit = 10
   function addInput(tableId) {
