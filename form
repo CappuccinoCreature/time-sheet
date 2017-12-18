@@ -26,7 +26,7 @@ Name:<br>
 <table id = 'timeTable'>
 <tr><th>Date</th><th>Hours</th></tr>
 <tr><td><input type = 'date' name = 'date'></td>
-<td><input type = 'number' name = 'hours' min = .5 max = 30 step = .5></td></tr>
+<td><input type = 'number' name = 'hour' min = .5 max = 30 step = .5></td></tr>
 </table><br>
 <input type = 'button' name = 'addValue' onClick = 'addInput()' value = 'Add an entry'><br>
 <input type = 'submit' name = 'submit' value = 'Submit'>
