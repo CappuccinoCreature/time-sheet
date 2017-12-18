@@ -5,18 +5,14 @@
 <script type = 'text/javaScript'>
   count = 1
   limit = 10
-  function addInput(tableId) {
-    if (count < limit) {
-			var table = document.getElementById(tableId)
-			var row = table.insertRow(-1)
-			var cell0 = row.insertCell(0)
-			cell0.innerHTML = '<input type = 'date' name = 'dates[]'>'
-			var cell1 = row.insertCell(1)
-			cell1.innerHTML = '<input type = 'number' name = 'hours'>'
-		count++
-	} else
-		alert = 'You cannot add more than 10 days'
-  }
+  function addInput(tableID) {
+    var table = document.getElementById(tableID);
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+    var colCount = table.rows[0].cells.length;
+    for (var i = 0; i < colCount; i++) {
+        var newcell = row.insertCell(i);
+        newcell.innerHTML = table.rows[0].cells[i].innerHTML;
 </script>
 </head>
 <body>
