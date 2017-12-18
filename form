@@ -10,15 +10,9 @@
 			var table = document.getElementById(tableId)
 			var row = table.insertRow(-1)
 			var cell0 = row.insertCell(0)
-			var element0 = document.createElement('input')
-			element0.type = 'date'
-			element0.name = 'dates[]'
-			cell0.appendChild(element0)
+			cell0.innerHTML = '<input type = 'date' name = 'dates[]'>'
 			var cell1 = row.insertCell(1)
-			var element1 = document.createElement('input')
-			element1.type = 'number'
-			element1.name = 'hours[]'
-			cell1.appendChild(element1)
+			cell1.innerHTML = '<input type = 'number' name = 'hours'>'
 		count++
 	} else
 		alert = 'You cannot add more than 10 days'
