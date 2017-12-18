@@ -12,6 +12,7 @@
 		foreach (array_combine ($dates, $hours) as $date => $hour) {
 		echo '<tr><td>', $day, '</td><td>', $time, '</td></tr>';
 		}
+	}
 	echo '</table><br>',
 	'Signature';
 ?>
