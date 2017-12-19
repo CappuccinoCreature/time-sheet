@@ -40,10 +40,11 @@
 	} else {
 		$hours_3 = '';
 	}
-	echo '<h3>Time Sheet</h3><br>',
+	echo '<h3>AKRON PUBLIC SCHOOLS/AUXILIARY SERVICES ABSENCE & PAYROLL REPORT</h3><br>',
 	$name, '<br>
+	ID # <br>
 	Our Lady of the Elms<br>
-	<table border = 1><tr><th>Date</th><th>Hours</th></tr>
+	<table border = 1 cellpadding = 1><tr><th>Date</th><th>Hours</th></tr>
 	<tr><td>', $day_0, '</td><td>', $hours_0, '</td></tr>
 	<tr><td>', $day_1, '</td><td>', $hours_1, '</td></tr>
 	<tr><td>', $day_2, '</td><td>', $hours_2, '</td></tr>
