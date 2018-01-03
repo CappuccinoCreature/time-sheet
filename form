@@ -1,36 +1,94 @@
 <html>
 <head>
-<meta charset = 'UTF-8'>
-<h3>Auxiliary Services Time Sheet</h3>
+	<meta charset='utf-8'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.5.0/jquery.serialize-object.min.js"></script>
+	<script>
+		$(() => {
+			var $form = $('#form')
+			var url = 'https://script.google.com/macros/u/0/s/AKfycbx8MH9-0EGHYYupVG2R-gu-co5aVfRoEpKObdzCw0IE20h-Z4zO/exec'
+			$('#submit').on('click', function(e) {
+				e.preventDefault();
+				var jqxhr = $.ajax({
+					url: url,
+					method: "GET",
+					dataType: "json",
+					data: $form.serializeObject()
+				}).success(
+					// do something
+				);
+			})
+		})
+ 	</script>
 </head>
 <body>
-<form method = 'post' action = 'http://localhost/output.php'>
-Name:<br>
-<input type = 'text' name = 'name'>
-<table>
-<tr><th>Date</th><th>Hours</th></tr>
-<tr><td><input type = 'date' name = 'day_0' min = date.now-20 max = date.now+10></td>
-<td><input type = 'number' name = 'hours_0' min = 0 max = 20 step = 0.5></td></tr>
-<tr><td><input type = 'date' name = 'day_1'></td>
-<td><input type = 'number' name = 'hours_1' min = 0 max = 20 step = 0.5></td></tr>
-<tr><td><input type = 'date' name = 'day_2'></td>
-<td><input type = 'number' name = 'hours_2' min = 0 max = 20 step = 0.5></td></tr>
-<tr><td><input type = 'date' name = 'day_3'></td>
-<td><input type = 'number' name = 'hours_3' min = 0 max = 20 step = 0.5></td></tr>
-<tr><td><input type = 'date' name = 'day_4'></td>
-<td><input type = 'number' name = 'hours_4' min = 0 max = 20 step = 0.5></td></tr>
-<tr><td><input type = 'date' name = 'day_5'></td>
-<td><input type = 'number' name = 'hours_5' min = 0 max = 20 step = 0.5></td></tr>
-<tr><td><input type = 'date' name = 'day_6'></td>
-<td><input type = 'number' name = 'hours_6' min = 0 max = 20 step = 0.5></td></tr>
-<tr><td><input type = 'date' name = 'day_7'></td>
-<td><input type = 'number' name = 'hours_7' min = 0 max = 20 step = 0.5></td></tr>
-<tr><td><input type = 'date' name = 'day_8'></td>
-<td><input type = 'number' name = 'hours_8' min = 0 max = 20 step = 0.5></td></tr>
-<tr><td><input type = 'date' name = 'day_9'></td>
-<td><input type = 'number' name = 'hours_9' min = 0 max = 20 step = 0.5></td></tr>
-</table>
-<input type = 'submit' name = 'submit' value = 'Submit'>
+<h3>Auxiliary Services Absence & Payroll Report</h3>
+<form method = 'post'>
+	<table border=0 padding=1>
+		<tr>
+			<td>Payroll Period Begins:</td>
+			<td><input type='date' name='begin'></td>
+		</tr>
+		<tr>
+			<td>Payroll Period Ends:</td>
+			<td><input type='date' name='end'></td>
+		</tr>
+		<tr>
+			<td>Name:</td>
+			<td><input type='text' name='name'></td>
+		</tr>
+		<tr>
+			<td>ID#:</td>
+			<td><input type='number' name='id'></td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>Date</th>
+			<th>Hours</th>
+		</tr>
+		<tr>
+			<td><input type = 'date' name = 'day0' min = date.now-20 max = date.now+10></td>
+			<td><input type = 'number' name = 'hours0' min = 0 max = 20 step = 0.5></td>
+		</tr>
+		<tr>
+			<td><input type = 'date' name = 'day1'></td>
+			<td><input type = 'number' name = 'hours1' min = 0 max = 20 step = 0.5></td>
+		</tr>
+		<tr>
+			<td><input type = 'date' name = 'day2'></td>
+			<td><input type = 'number' name = 'hours2' min = 0 max = 20 step = 0.5></td>
+		</tr>
+		<tr>
+			<td><input type = 'date' name = 'day3'></td>
+			<td><input type = 'number' name = 'hours3' min = 0 max = 20 step = 0.5></td>
+		</tr>
+		<tr>
+			<td><input type = 'date' name = 'day4'></td>
+			<td><input type = 'number' name = 'hours4' min = 0 max = 20 step = 0.5></td>
+		</tr>
+		<tr>
+			<td><input type = 'date' name = 'day5'></td>
+			<td><input type = 'number' name = 'hours5' min = 0 max = 20 step = 0.5></td>
+		</tr>
+		<tr>
+			<td><input type = 'date' name = 'day6'></td>
+			<td><input type = 'number' name = 'hours6' min = 0 max = 20 step = 0.5></td>
+		</tr>
+		<tr>
+			<td><input type = 'date' name = 'day7'></td>
+			<td><input type = 'number' name = 'hours7' min = 0 max = 20 step = 0.5></td>
+		</tr>
+		<tr>
+			<td><input type = 'date' name = 'day8'></td>
+			<td><input type = 'number' name = 'hours8' min = 0 max = 20 step = 0.5></td>
+		</tr>
+		<tr>
+			<td><input type = 'date' name = 'day9'></td>
+			<td><input type = 'number' name = 'hours9' min = 0 max = 20 step = 0.5></td>
+		</tr>
+	</table>
+	<input type = 'submit' name = 'submit' value = 'Submit'>
 </form>
 </body>
 </html>
