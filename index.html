@@ -19,76 +19,76 @@
 				);
 			})
 		})
- 	</script>
+	</script>
 </head>
 <body>
-<h3>Auxiliary Services Absence & Payroll Report</h3>
-<form method = 'post'>
-	<table border=0 padding=1>
-		<tr>
-			<td>Payroll Period Begins:</td>
-			<td><input type='date' name='begin'></td>
-		</tr>
-		<tr>
-			<td>Payroll Period Ends:</td>
-			<td><input type='date' name='end'></td>
-		</tr>
-		<tr>
-			<td>Name:</td>
-			<td><input type='text' name='name'></td>
-		</tr>
-		<tr>
-			<td>ID#:</td>
-			<td><input type='number' name='id'></td>
-		</tr>
-	</table>
-	<table>
-		<tr>
-			<th>Date</th>
-			<th>Hours</th>
-		</tr>
-		<tr>
-			<td><input type = 'date' name = 'day0' min = date.now-20 max = date.now+10></td>
-			<td><input type = 'number' name = 'hours0' min = 0 max = 20 step = 0.5></td>
-		</tr>
-		<tr>
-			<td><input type = 'date' name = 'day1'></td>
-			<td><input type = 'number' name = 'hours1' min = 0 max = 20 step = 0.5></td>
-		</tr>
-		<tr>
-			<td><input type = 'date' name = 'day2'></td>
-			<td><input type = 'number' name = 'hours2' min = 0 max = 20 step = 0.5></td>
-		</tr>
-		<tr>
-			<td><input type = 'date' name = 'day3'></td>
-			<td><input type = 'number' name = 'hours3' min = 0 max = 20 step = 0.5></td>
-		</tr>
-		<tr>
-			<td><input type = 'date' name = 'day4'></td>
-			<td><input type = 'number' name = 'hours4' min = 0 max = 20 step = 0.5></td>
-		</tr>
-		<tr>
-			<td><input type = 'date' name = 'day5'></td>
-			<td><input type = 'number' name = 'hours5' min = 0 max = 20 step = 0.5></td>
-		</tr>
-		<tr>
-			<td><input type = 'date' name = 'day6'></td>
-			<td><input type = 'number' name = 'hours6' min = 0 max = 20 step = 0.5></td>
-		</tr>
-		<tr>
-			<td><input type = 'date' name = 'day7'></td>
-			<td><input type = 'number' name = 'hours7' min = 0 max = 20 step = 0.5></td>
-		</tr>
-		<tr>
-			<td><input type = 'date' name = 'day8'></td>
-			<td><input type = 'number' name = 'hours8' min = 0 max = 20 step = 0.5></td>
-		</tr>
-		<tr>
-			<td><input type = 'date' name = 'day9'></td>
-			<td><input type = 'number' name = 'hours9' min = 0 max = 20 step = 0.5></td>
-		</tr>
-	</table>
-	<input type = 'submit' name = 'submit' value = 'Submit'>
-</form>
+	<h3>Auxiliary Services Absence & Payroll Report</h3>
+	<form method='post'>
+		<table border='0' padding='1'>
+			<tr>
+				<td>Payroll Period Begins:</td>
+				<td><input type='date' name='begin'></td>
+			</tr>
+			<tr>
+				<td>Payroll Period Ends:</td>
+				<td><input type='date' name='end'></td>
+			</tr>
+			<tr>
+				<td>Employee Name:</td>
+				<td><input type='text' name='name'></td>
+			</tr>
+			<tr>
+				<td>Employee ID#:</td>
+				<td><input type='number' name='id'></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<th>Date</th>
+				<th>Hours</th>
+			</tr>
+			<tr>
+				<td><input type='date' name='day0'></td>
+				<td><input type='number' name='hours0' min='0' max='20' step='0.5'></td>
+			</tr>
+			<tr>
+				<td><input type='date' name='day1'></td>
+				<td><input type='number' name='hours1' min='0' max='20' step='0.5'></td>
+			</tr>
+			<tr>
+				<td><input type='date' name='day2'></td>
+				<td><input type='number' name='hours2' min='0' max='20' step='0.5'></td>
+			</tr>
+			<tr>
+				<td><input type='date' name='day3'></td>
+				<td><input type='number' name='hours3' min='0' max='20' step='0.5'></td>
+			</tr>
+			<tr>
+				<td><input type='date' name='day4'></td>
+				<td><input type='number' name='hours4' min='0' max='20' step='0.5'></td>
+			</tr>
+			<tr>
+				<td><input type='date' name='day5'></td>
+				<td><input type='number' name='hours5' min='0' max='20' step='0.5'></td>
+			</tr>
+			<tr>
+				<td><input type='date' name='day6'></td>
+				<td><input type='number' name='hours6' min='0' max='20' step='0.5'></td>
+			</tr>
+			<tr>
+				<td><input type='date' name='day7'></td>
+				<td><input type='number' name='hours7' min='0' max='20' step='0.5'></td>
+			</tr>
+			<tr>
+				<td><input type='date' name='day8'></td>
+				<td><input type='number' name='hours8' min='0' max='20' step='0.5'></td>
+			</tr>
+			<tr>
+				<td><input type='date' name='day9'></td>
+				<td><input type='number' name='hours9' min='0' max='20' step='0.5'></td>
+			</tr>
+		</table>
+		<input id='submit' type='submit' name='submit' value='Submit'>
+	</form>
 </body>
 </html>
